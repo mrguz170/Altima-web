@@ -61,14 +61,14 @@ body {
   
 }
 .ic-logo-container {
-  width: 200px;
-  height: 200px;
-  background-image: url('Images/ALTIMA.png');
+  width: 300px;
+  height: 300px;
+  background-image: url('Images/A3.png');
   background-size: 100%;
-  margin: 0 auto 30px auto;
+  margin: -30px auto -30px auto;
 }
 .user-form {
-  background: white;
+  background: gray;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
@@ -108,14 +108,14 @@ body {
 }
 .user-action-trigger:nth-child(1):before {
   right: 0;
-  background-color: #7190d6;
+  background-color: #c4002e;
 }
 .user-action-trigger:nth-child(2) {
   margin-left: -2px;
 }
 .user-action-trigger:nth-child(2):before {
   left: 0;
-  background-color: #b80063;
+  background-color: #c4002e;
 }
 .user-action-trigger.active {
   color: #000000;
@@ -145,12 +145,12 @@ body {
 .input-container:before {
   position: absolute;
   font-size: 18px;
-  color: #7190d6;
+  color: #c4002e;
   left: 10px;
   top: 12px;
 }
 .user-action-signup .input-container:before {
-  color: #b80063;
+  color: #c4002e;
 }
 h1 {
   font-size: 22px;
@@ -174,10 +174,10 @@ input {
   color: rgba(0, 0, 0, 0.8);
 }
 input:focus {
-  border-color: #7190d6;
+  border-color: #c4002e;
 }
 .user-action-signup input:focus {
-  border-color: #b80063;
+  border-color: #c4002e;
 }
 .user-go {
   display: block;
@@ -186,9 +186,9 @@ input:focus {
   outline: none;
   border: none;
   color: white;
-  background: #7190d6;
+  background: #c4002e;
   padding: 10px 20px;
 }
 .user-action-signup .user-go {
-  background: #b80063;
+  background: #c4002e;
 }
