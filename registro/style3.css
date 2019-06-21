@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+
+ @font-face{
+      font-family: "NISSAN";
+      src: url("Tipo/NissanBold.otf");
+    }
+
+    h1{
+      font-family: NISSAN
+      font-size: 10%;
+    }
+
+body {
+  font-family: "NISSAN";
+  font-weight: 300;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  background: #333;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('images/bg.png');
+  
+  -webkit-animation: changeBG 20s infinite ease-in-out alternate;
+          animation: changeBG 20s infinite ease-in-out alternate;
+}
+@-webkit-keyframes changeBG {
+  0% {
+    background-image: url('images/bg.png');
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  
+}
+@keyframes changeBG {
+  0% {
+    background-image: url('images/bg.png');
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  
+}
+.ic-logo-container {
+  width: 300px;
+  height: 300px;
+  background-image: url('images/A3.png');
+  background-size: 100%;
+  margin: -30px auto -30px auto;
+}
+.user-form {
+  background: gray;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+  align-self: center;
+  text-align: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+}
+.user-action-trigger {
+  transition: all 0.15s ease-out;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  text-decoration: none;
+}
+.user-action-trigger:visited {
+  color: rgba(0, 0, 0, 0.3);
+}
+.user-action-trigger:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.user-action-trigger:before {
+  transition: width 0.15s ease-out;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+}
+.user-action-trigger:nth-child(1) {
+  margin-right: -2px;
+}
+.user-action-trigger:nth-child(1):before {
+  right: 0;
+  background-color: #c4002e;
+}
+.user-action-trigger:nth-child(2) {
+  margin-left: -2px;
+}
+.user-action-trigger:nth-child(2):before {
+  left: 0;
+  background-color: #c4002e;
+}
+.user-action-trigger.active {
+  color: #000000;
+  text-decoration: none;
+}
+.user-action-trigger.active:before {
+  width: 100%;
+}
+.user-action-tabs {
+  position: relative;
+}
+.user-action-content {
+  padding: 20px;
+}
+.user-action-option {
+  display: none;
+}
+.user-action-option.active {
+  display: block;
+}
+.input-container {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+}
+.input-container:before {
+  position: absolute;
+  font-size: 18px;
+  color: #c4002e;
+  left: 10px;
+  top: 12px;
+}
+.user-action-signup .input-container:before {
+  color: #c4002e;
+}
+h1 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #a2cf04;
+  margin: 0 0 40px 0;
+}
+input {
+  transition: border 0.15s ease-out;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 35px;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-family: "NISSAN";
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+}
+input:focus {
+  border-color: #c4002e;
+}
+.user-action-signup input:focus {
+  border-color: #c4002e;
+}
+.user-go {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  color: white;
+  background: #c4002e;
+  padding: 10px 20px;
+}
+.user-action-signup .user-go {
+  background: #c4002e;
+}

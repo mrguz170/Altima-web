@@ -39,14 +39,14 @@ body {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url('Images/bg.png');
+  background-image: url('images/bg.png');
   
   -webkit-animation: changeBG 20s infinite ease-in-out alternate;
           animation: changeBG 20s infinite ease-in-out alternate;
 }
 @-webkit-keyframes changeBG {
   0% {
-    background-image: url('Images/bg.png');
+    background-image: url('images/bg.png');
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -54,7 +54,7 @@ body {
 }
 @keyframes changeBG {
   0% {
-    background-image: url('Images/bg.png');
+    background-image: url('images/bg.png');
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -63,7 +63,7 @@ body {
 .ic-logo-container {
   width: 300px;
   height: 300px;
-  background-image: url('Images/A3.png');
+  background-image: url('images/A3.png');
   background-size: 100%;
   margin: -30px auto -30px auto;
 }
