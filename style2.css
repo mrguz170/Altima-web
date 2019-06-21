@@ -260,9 +260,9 @@ button:focus {
 	font-family: 'NISSAN';
 	display: inline-block;
 	font-weight: 600;
-	background: #fff;
-	padding: 5px 20px;
-	margin-bottom: 30px;
+	
+	padding: 0px 0px;
+	margin-bottom: 0px;
 }
 
 
@@ -1513,7 +1513,7 @@ button:focus {
 @media (max-width: 767px) {
 
 	.mu-logo img {
-		width: 150px;
+		width: 0px;
 	}
 
 	
@@ -1583,7 +1583,7 @@ button:focus {
 	}
 
 	.mu-logo {
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 		font-size: 30px;
 	}
 
