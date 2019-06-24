@@ -77,17 +77,24 @@ body {
   pointer-events: none;
 }
 
+
+body {
+ 
+ background-color: #cccccc;
+}
+
+
 .slides {
   position: relative;
   display: block;
   height: 100vh;
   width: 100%;
-  background: #c4002e;
-  transition: background 1s cubic-bezier(0.99, 1, 0.92, 1);
+  background-image: url("Images/About.jpg");
+  transition:  background-image: url("Images/bn.jpg");
 }
 .is-sliding .slides {
-  background: #c4002e;
-  transition: background 0.3s cubic-bezier(0.99, 1, 0.92, 1);
+   background-image: url("Images/bn.jpg");
+  transition:  background-image: url("Images/bn.jpg");
 }
 
 .slide {
