@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -28,6 +28,80 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
  
  	<style type="text/css">
+ 	
+ 	
+	.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button5:hover {
+  background-color: black;
+  color: white;
+}
+
+ 	
+ 	
+ 	
+ 	
+ 	
  		@font-face{
       font-family: "NISSAN";
       src: url("Tipo/NissanRegular.otf");
@@ -70,10 +144,9 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      	<ul class="nav navbar-nav mu-menu navbar-right">
-			      		<li><a href="#mu-hero">Inicio</a></li>
-				       
-				        <li><a href="#mu-schedule">Programa</a></li>
+			      		<li><a href="#mu-hero">Inicio</a></li>			       
 			            <li><a href="#mu-speakers">Invitados</a></li>
+			             <li><a href="#mu-schedule">Programa</a></li>
 			  
 			           
 			      	</ul>
@@ -98,11 +171,12 @@
 						<!-- End center Logo -->
 
 						<div class="mu-hero-featured-content">
+							 <span class="title-line"><span><input style="width: 320px; height: 380px;" type="image" src="Images/ALTIMA.png" onclick="window.location.href = 'home.html';" /> </button></span></span>
 
-							<h1>PREPARATE PARA TOMAR EL CONTROL DE TU VIDA</h1>
-							<h2>NISSAN ALTIMA</h2>
-							<p class="mu-event-date-line">1 Agosto, 2019. CDMX, MX</p>
-
+							<h1>PREPÁRATE PARA TOMAR</h1>
+							<h1>EL CONTROL DE TU VIDA</h1>
+							<h2>NISSAN ALTIMA 2019</h2>
+							
 							<div class="mu-event-counter-area">
 								<div id="mu-event-counter">
 									
@@ -122,24 +196,21 @@
 	<!-- Start main content -->
 	<main role="main">
 		<!-- Start About -->
-		<section id="mu-about">
+		<section id="mu-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-about-area">
-							<!-- Start Feature Content -->
+					<div class="colo-md-12">
+						<div class="mu-schedule-area">
+							<!-- Start Feature Content 
 							<div class="row">
-								<div class="col-md-6">
-									<div class="mu-about-left">
-										<img class="" src="assets/images/about.jpg" alt="Men Speaker">
-									</div>
-								</div>
+								
 								<div class="col-md-6">
 									<div class="mu-about-right">
+
 										<h2>Sobre el evento</h2>
                                         <p>Este Summit te preparará física, emocional y mentalmente para alcanzar eso que te mueve.</p>
 
-                                        <p>Nissan Mexicana apoya movimientos sociales en pro del emprendedurismo, por lo cual presenta el Summit Toma el Control Altima 2019 donde participaran y 
+                                        <p>Nissan Mexicana apoya movimientos sociales en pro del emprendedurismo, por lo cual presenta el Summit Toma el Control Altima 2019 donde participarán y 
                                             se realizarán conversatorios y workshops sobre como tomar el control de tu vida y brindarte las herramientas y recursos para llegar al éxito.</p>   
 
                                         <p>El Summit contará con expertos que hayan tomado el control de su vida y hayan alcanzado sus metas.
@@ -147,7 +218,22 @@
 									</div>
 								</div>
 							</div>
+							-->
+						
 							<!-- End Feature Content -->
+							<div class="mu-title-area">
+								<h2 class="mu-title" align="left">Sobre el evento</h2>
+								<p align="left">  Este Summit te preparará física, emocional y mentalmente para alcanzar eso que te mueve.</p>
+
+                                        <p align="left">  Un evento que busca brindar las herramientas y recursos necesarios para llegar al éxito.</p>
+                                        
+                                        <p align="left">  Nissan Mexicana, preocupada por el futuro de México se suma al movimiento <b>“Toma el Control” </b>y presenta este Summit en el cual se realizarán conversatorios y workshops sobre cómo tomar el control de tu vida y se te brindarán las herramientas y recursos necesarios para llegar al éxito de la mano del nuevo Nissan Altima 2019.</p>
+
+                                            <p align="left">  El Summit contará con expertos que hayan tomado el control de su vida y hayan alcanzado sus metas.</p>
+                                            
+                                            <br><br>
+                                            <button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button>
+							</div>
 
 						</div>
 					</div>
@@ -175,116 +261,18 @@
 			<div class="mu-video-content">
 				<div class="mu-video-iframe-area">
 					<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-					<iframe width="854" height="480" src="https://www.youtube.com/embed/GcD5A0lRf5w" frameborder="0" allowfullscreen></iframe>
+					<iframe width="854" height="480" src="https://www.youtube.com/embed/E9vmDWhV-Dk" frameborder="0" allowfullscreen></iframe>
+					
 				</div>
 			</div>
 			<!-- End Video content -->
 
 		</section>
 		<!-- End Video -->
-
-		<!-- Start Schedule  -->
-		<section id="mu-schedule">
-			<div class="container">
-				<div class="row">
-					<div class="colo-md-12">
-						<div class="mu-schedule-area">
-
-							<div class="mu-title-area">
-								<h2 class="mu-title">Nuestro Programa</h2>
-								<p>El evento tendrá lugar el día 1 de Agosoto, tomando inicio a las 1:00 PM y finalizará con la clausura a las 8:00 PM.</p>
-							</div>
-
-							<div class="mu-schedule-content-area">
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
-								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">1 Day / 01 Agosto</a></li>
-								</ul>
-
-								<!-- Tab panes -->
-								<div class="tab-content mu-schedule-content">
-								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
-                                        <ul>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">1:00 a 1:45 PM</p>
-                                                    <h3>Inauguración del evento</h3>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">1:45 a 2:00 PM</p>
-                                                    <h3>Ingreso a conferencias y talleres</h3>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                              <!-- Tab panes   <img src="assets/images/speaker-1.jpg" alt="event speaker"> -->   
-                                                    <p class="mu-event-time">2:00 PM</p>
-                                                    <h3>Conferencia 1</h3>
-                                                    <span>By Speaker1</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                  <!-- Tab panes  <img src="assets/images/speaker-2.jpg" alt="event speaker"> -->
-                                                    <p class="mu-event-time">3:00 PM</p>
-                                                    <h3>Conferencia 2</h3>
-                                                    <span>By Speaker2</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                   
-                                                    <p class="mu-event-time">4:00 PM</p>
-                                                    <h3>Workshop 1</h3>
-                                                    <span>By Invitado taller 1</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">4:00 a 5:30 PM</p>
-                                                    <h3>Break de comida</h3>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="mu-single-event">
-                                                   
-                                                    <p class="mu-event-time">5:30 PM</p>
-                                                    <h3>Conferencia 3</h3>
-                                                    <span>By Speaker3</span>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="mu-single-event">
-                                                   
-                                                    <p class="mu-event-time">6:00 PM</p>
-                                                    <h3>Workshop 2</h3>
-                                                    <span>By Invitado taller 2</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">7:00 a 8:00 PM</p>
-                                                    <h3>Experiencia gastronómica y clausura</h3>
-                                                </div>
-                                            </li>
-                                        </ul>
-								    </div>
-
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Schedule -->
-
+		
+		
+		
+		
 		<!-- Start Speakers -->
 		<section id="mu-speakers">
 			<div class="container">
@@ -304,9 +292,9 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/Alan.jpg" alt="speaker img">
+										<img src="Images/alan.jpg" alt="speaker img">
                                         <div class="mu-single-speakers-info">
-                                            <h3>Alan Estrada</h3>
+                                            
                                             <p>Actor, Cantante & Youtuber </p>
                                             <ul class="mu-single-speakers-social">
                                                 <li><a href="https://www.facebook.com/alanxelmundo"><i class="fa fa-facebook"></i></a></li>
@@ -321,10 +309,10 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/oscar.jpg" alt="speaker img">
+										<img src="Images/Oscar.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
-                                            <h3>Oscar Madrazo</h3>
-                                            <p>Modelo, presentador de televisión y empresario mexicano.</p>
+                                           
+                                            <p>Modelo, presentador de televisión y empresario mexicano</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="https://www.facebook.com/oscar.hassey"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="https://twitter.com/MadrazoOscar"><i class="fa fa-twitter"></i></a></li>
@@ -336,16 +324,58 @@
 
 
 									<!-- Start single speaker -->
-									
+									<div class="mu-single-speakers">
+										<img src="Images/MARION.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+                                           
+                                            <p>Presentadora de televisión, periodista y comentarista de deportes</p>
+                                            <ul class="mu-single-speakers-social">
+												<li><a href="https://www.facebook.com/lareimers/"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="https://twitter.com/LaReimers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="https://www.instagram.com/lareimers/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
+											</ul>
+											
+										</div>
+									</div>
 									<!-- End single speaker -->
 
 									<!-- Start single speaker -->
-										
+										<div class="mu-single-speakers">
+										<img src="Images/LUZ.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+                                           
+                                            <p>"Mindful Living" por Luz Orea</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="https://www.facebook.com/luz.orea"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="https://twitter.com/LuzOrea"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="https://www.instagram.com/greenhealthymamma/"><i class="fa fa-instagram"></i></a></li>
+											</ul>
+										</div>
+									</div>
 									<!-- End single speaker -->
 
 									<!-- Start single speaker -->
-									
+									<div class="mu-single-speakers">
+										<img src="Images/COACHING.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+                                           
+                                            <p>TBC</p>
+											
+										</div>
+									</div>
 									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="Images/NISSANW.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+                                           
+                                            <p>TBC</p>
+											
+										</div>
+									</div>
+									<!-- End single speaker -->
+
 
 								</div>
 							</div>
@@ -357,6 +387,144 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
+		
+		
+		
+
+		<!-- Start Schedule  -->
+		<section id="mu-schedule">
+			<div class="container">
+				<div class="row">
+					<div class="colo-md-12">
+						<div class="mu-schedule-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Nuestro Programa</h2>
+								<p>El evento tendrá lugar el día 01 de agosto tomando inicio a las 13:00 hrs y finalizará a las 20:00 hrs.
+</p>
+							</div>
+
+							<div class="mu-schedule-content-area">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">1 Day / 01 Agosto</a></li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content mu-schedule-content">
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+                                        <ul>
+                                       		
+                                             <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">12:30 - 13:30</p>
+                                                    <h3>Workshop "Mindful living" con:</h3>
+                                                    <span>Luz Orea</span><br>
+                                                   
+                                                   
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="mu-single-event">
+                                              <!-- Tab panes   <img src="assets/images/speaker-1.jpg" alt="event speaker"> -->   
+                                                    <p class="mu-event-time">13:45 - 14:30</p>
+                                                    <h3>Conversaciones con:</h3>
+                                                    <span>Alan Estrada</span><br>
+                                            
+                                                  
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                  <!-- Tab panes  <img src="assets/images/speaker-2.jpg" alt="event speaker"> -->
+                                                    <p class="mu-event-time">13:45 - 14:45</p>
+                                                    <h3>Workshop 2</h3>
+                                                   
+                                                  
+                                                    
+                                                    
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="mu-single-event">
+                                                   
+                                                    <p class="mu-event-time">14:30 - 14:50</p>
+                                                    <h3>Experiencia One to One con:</h3>
+                                                    <span>Alan Estrada</span>
+                                                   
+                                                </div>
+                                            </li>
+                                            
+
+                                            <li>
+                                                <div class="mu-single-event">
+                                                   
+                                                    <p class="mu-event-time">16:00 - 17:00</p>
+                                                    <h3>Workshop "Como crear una nueva vida" con:</h3>
+                                                    <span>Luz Orea</span><br>
+                                                  
+                                                 
+                                                </div>
+                                            </li>
+
+                                           
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">17:15 - 18:00</p>
+                                                    <h3>Conversaciones con:</h3>
+                                                    <span>Oscar Madrazo</span><br>
+                                                   
+                                                </div>
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">18:00 - 18:20</p>
+                                                    <h3>Experiencia One to One con:</h3>
+                                                    <span>Oscar Madrazo</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">18:20 - 19:10</p>
+                                                    <h3>Conversaciones con:</h3>
+                                                    <span>Marion Reimers</span><br>
+                                                   
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">18:20 - 19:20</p>
+                                                    <h3>Workshop2</h3>
+                                                    
+                                                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">19:10 - 19:30</p>
+                                                    <h3>Experiencia One to One con:</h3>
+                                                    <span>Marion Reimers</span>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+								    </div>
+
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Schedule -->
+
+		
 
 		<!-- Start Venue -->
 		<section id="mu-venue">
@@ -373,9 +541,10 @@
 
 					<div class="col-md-6">
 						<div class="mu-venue-address">
-							  <h1>LUGAR DE ENCUENTRO</h1>
+							  <h1>¿DONDE?</h1>
                             <h3>Centro De Artes Vivas</h3>
-                            <h4>Le Salvador Novo 8, Santa Catarina, 04010 Ciudad de México, CDMX</h4>
+                            <h4>Calle Salvador Novo 8, Santa Catarina, 04010 Ciudad de México, CDMX</h4>
+                             <button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button>
                         </div>
 					</div>
 
