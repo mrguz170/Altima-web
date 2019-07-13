@@ -562,6 +562,19 @@ input.checkbox:checked:after {
         password:password
 
       });
+
+      firebase.database().ref('SpeakersSubcriptions/' + id).set({
+        one: false,
+        two: false,
+        three:false
+
+      });
+
+      firebase.database().ref('WorkShopsSubcriptions/' + id).set({
+        one: false,
+        two: false,
+        three:false
+      });
  
       firebase.auth().currentUser.sendEmailVerification();
       
@@ -585,12 +598,12 @@ input.checkbox:checked:after {
 
        
 
-         <h1><font color="white">NISSAN</font></h1>
+         <h1><fonts color="white">NISSAN</fonts></h1>
       </div>   
     </div>  
     <!-- copyright -->
     <div class="w3copyright-agile">
-      <h5><font color="white">Toma el control</font></h5>
+      <h5><fonts color="white">Toma el control</fonts></h5>
     </div>
     <!-- //copyright -->  
   </div>  
