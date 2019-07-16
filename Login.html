@@ -506,34 +506,37 @@ input.checkbox:checked:after {
 </head>
 
 <body>
-
-   <div class="main-w3layouts center-container">
+ <div class="main-w3layouts center-container">
     <h1><fonts color="white">BIENVENIDO</fonts></h1>
     <div class="main-agileinfo">
       <div class="agileits-top"> 
-        
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-          <input class="text" type="text" name="Username" id="usr" placeholder="Usuario" required="">
-          <input class="text email" type="email" name="email" id="email" placeholder="Correo" required="">
-          <input class="text" type="password" name="password" id="password" placeholder="Contraseña" required="">
+
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      <input class="text email" type="email" name="email" id="email_field" placeholder="Correo" required="">
+          <input class="text" type="password" name="password" id="password_field" placeholder="Contraseña" required="">
 
 
+    
+    <input onclick="login()" type="submit" class="user-go" value="ENTRAR">
+         <br>
+         <br>
+         
+    <font color="white"><center>¿No te has registrado?<a href="./Register.html">  <font color="white"><ins>Registrarse</ins></font></a></center></font>
   
 
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
 
-         <input onclick="RegisterUser()" type="submit" class="user-go" value="REGISTRARSE">
-         <br>
-         <br>
 
-           <font color="white"><center>¿Ya tienes cuenta?<a href="./Login.html">  <font color="white"><ins>Acceder</ins></font></a></center></font>
-
-<!-- <div>¿Ya tienes una cuenta? <a href="Login.html">Ingresar</a></div> -->
-
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
 
-<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>  
 
@@ -548,61 +551,11 @@ input.checkbox:checked:after {
   };
 
   firebase.initializeApp(firebaseConfig);
-  var database = firebase.database();
-
-  function RegisterUser(){
-    
-    var email=document.getElementById('email').value;
-    var password=document.getElementById('password').value;
-    var username=document.getElementById('usr').value;
-    
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {  
-      alert('Usuario Registrado. ¿Estás listo para tomar el control?')
-   
-      var id = firebase.auth().currentUser.uid;
-  
-      firebase.database().ref('users/' + id).set({
-        username: username,
-        email: email,
-        password:password
-
-      });
-
-      firebase.database().ref('SpeakersSubcriptions/' + id).set({
-        one: false,
-        two: false,
-        three:false
-
-      });
-
-      firebase.database().ref('WorkShopsSubcriptions/' + id).set({
-        one: false,
-        two: false,
-        three:false
-      });
- 
-      firebase.auth().currentUser.sendEmailVerification();
-      
-      window.location.replace("./home.html")
-    
-    }).catch(function(error){
-       alert('La contraseña debe tener más de 6 dígitos o el correo no es válido')
-      var errorcode= error.code;
-
-      var errormsg=error.message;
-
-
-    });
-  }
-
-
-
 </script>
 
-      
 
-       
-
+  <script src="index.js"></script>
+   
          <h1><fonts color="white">NISSAN</fonts></h1>
       </div>   
     </div>  
@@ -612,7 +565,6 @@ input.checkbox:checked:after {
     </div>
     <!-- //copyright -->  
   </div>  
- 
 
 
 </body>
