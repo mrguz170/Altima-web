@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>Registro</title>
+<title>LOGIN</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Custom Theme files -->
@@ -489,9 +489,6 @@ input.checkbox:checked:after {
     top: -2px;
   }
 }
-/*--//responsive--*/
-
-
 
     @font-face{
       font-family: "NISSAN";
@@ -506,66 +503,44 @@ input.checkbox:checked:after {
 </head>
 
 <body>
- <div class="main-w3layouts center-container">
-    <h1><fonts color="white">BIENVENIDO</fonts></h1>
-    <div class="main-agileinfo">
-      <div class="agileits-top"> 
+  <div class="main-w3layouts center-container">
+   <h1><fonts color="white">BIENVENIDO</fonts></h1>
+   <div class="main-agileinfo">
+     <div class="agileits-top"> 
+       
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <input class="text email" type="email" name="email" id="email" placeholder="Correo" required="">
+        <input class="text" type="password" name="password" id="password" placeholder="Contraseña" required="">
+        <input onclick="LoginUser()" type="submit" class="user-go" value="ACCEDER">
+        <br>
+        <br>
 
-      <i class="fa fa-user-o" aria-hidden="true"></i>
-      <input class="text email" type="email" name="email" id="email_field" placeholder="Correo" required="">
-          <input class="text" type="password" name="password" id="password_field" placeholder="Contraseña" required="">
+        <font color="white"><center>¿No estas registrado?<a href="./Register.html">  <font color="white"><ins>Acceder</ins></font></a></center></font>
 
-
-    
-    <input onclick="login()" type="submit" class="user-go" value="ENTRAR">
-         <br>
-         <br>
-         
-    <font color="white"><center>¿No te has registrado?<a href="./Register.html">  <font color="white"><ins>Registrarse</ins></font></a></center></font>
-  
-
-  <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
-    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
-    <button onclick="logout()">Logout</button>
-  </div>
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
 <script>  
-
   var firebaseConfig = {
-    apiKey: "AIzaSyAsTRKeUEKEf0nKxf2_GZ8s-W_mNRIYHb4",
-    authDomain: "tomaelcontrol-830dd.firebaseapp.com",
-    databaseURL: "https://tomaelcontrol-830dd.firebaseio.com",
-    projectId: "tomaelcontrol-830dd",
-    storageBucket: "tomaelcontrol-830dd.appspot.com",
-    messagingSenderId: "913825052825",
-    appId: "1:913825052825:web:914ed529ba0879b7"
+   apiKey: "AIzaSyAsTRKeUEKEf0nKxf2_GZ8s-W_mNRIYHb4",
+   authDomain: "tomaelcontrol-830dd.firebaseapp.com",
+   databaseURL: "https://tomaelcontrol-830dd.firebaseio.com",
+   projectId: "tomaelcontrol-830dd",
+   storageBucket: "tomaelcontrol-830dd.appspot.com",
+   messagingSenderId: "913825052825",
+   appId: "1:913825052825:web:914ed529ba0879b7"
   };
 
   firebase.initializeApp(firebaseConfig);
 </script>
 
+<script src = "Login.js"></script>
 
-  <script src="index.js"></script>
-   
-         <h1><fonts color="white">NISSAN</fonts></h1>
-      </div>   
-    </div>  
-    <!-- copyright -->
-   <div class="w3copyright-agile">
-      <h5><fonts color="white"></fonts></h5>
-    </div>
-    <!-- //copyright -->  
-  </div>  
-
-
+<h1><fonts color="white">NISSAN</fonts></h1>
+</div>   
+</div>  
+<div class="w3copyright-agile">
+  <h5><fonts color="white"></fonts></h5>
+</div>
+</div>  
 </body>
 </html>
