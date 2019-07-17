@@ -10,13 +10,13 @@ window.onload = function() {
     }
 
 
-  document.getElementById("ws1_1").onclick = function(){ registro("ws1"); };
-  document.getElementById("ws1_2").onclick = function(){ registro("ws1"); };
-  document.getElementById("ws2_1").onclick = function(){ registro("ws2"); };
-  document.getElementById("ws2_2").onclick = function(){ registro("ws2"); };
-  document.getElementById("sk1").onclick = function(){ registro("sk1"); };
-  document.getElementById("sk2").onclick = function(){ registro("sk2"); };
-  document.getElementById("sk3").onclick = function(){ registro("sk3"); };
+    document.getElementById("ws1_1").onclick = function(){ registro("ws1"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("ws1_2").onclick = function(){ registro("ws1"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("ws2_1").onclick = function(){ registro("ws2"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("ws2_2").onclick = function(){ registro("ws2"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("sk1").onclick = function(){ registro("sk1"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("sk2").onclick = function(){ registro("sk2"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
+    document.getElementById("sk3").onclick = function(){ registro("sk3"); this.innerHTML='<p style="color:#F00;"><b>Registrado</b></p>'; this.disabled = true; };
 
 };
 
