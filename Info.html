@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -31,82 +31,88 @@
  	
  	
 	.button {
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	cursor: pointer;
-	}
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-	.button1 {
-	background-color: white; 
-	color: black; 
-	border: 2px solid #4CAF50;
-	}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
 
-	.button1:hover {
-	background-color: #4CAF50;
-	color: white;
-	}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
 
-	.button2 {
-	background-color: white; 
-	color: black; 
-	border: 2px solid #008CBA;
-	}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
 
-	.button2:hover {
-	background-color: #008CBA;
-	color: white;
-	}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
 
-	.button3 {
-	background-color: white; 
-	color: black; 
-	border: 2px solid #f44336;
-	}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
 
-	.button3:hover {
-	background-color: #f44336;
-	color: white;
-	}
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
 
-	.button4 {
-	background-color: white;
-	color: black;
-	border: 2px solid #e7e7e7;
-	}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
 
-	.button4:hover {background-color: #e7e7e7;}
+.button4:hover {background-color: #e7e7e7;}
 
-	.button5 {
-	background-color: white;
-	color: black;
-	border: 2px solid black;
-	}
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
 
-	.button5:hover {
-	background-color: black;
-	color: white;
-	}
+.button5:hover {
+  background-color: black;
+  color: white;
+}
 
- 	@font-face{
+ 	
+ 	
+ 	
+ 	
+ 	
+ 		@font-face{
       font-family: "NISSAN";
       src: url("Tipo/NissanRegular.otf");
     }
 
     h5{
       font-family: NISSANREGULAR
-      font-size 10%
+      font-size: 10%;
     }
  	</style>
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -114,23 +120,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <!-- Start body -->
-  <body> 	
-		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-
-		<script>  
-		  var firebaseConfig = {
-		   apiKey: "AIzaSyAsTRKeUEKEf0nKxf2_GZ8s-W_mNRIYHb4",
-		   authDomain: "tomaelcontrol-830dd.firebaseapp.com",
-		   databaseURL: "https://tomaelcontrol-830dd.firebaseio.com",
-		   projectId: "tomaelcontrol-830dd",
-		   storageBucket: "tomaelcontrol-830dd.appspot.com",
-		   messagingSenderId: "913825052825",
-		   appId: "1:913825052825:web:914ed529ba0879b7"
-		  };
-		
-		  firebase.initializeApp(firebaseConfig);
-		</script>
+  <body>
+  	
   	<!-- Start Header -->
 	<header id="mu-hero" class="" role="banner">
 		<!-- Start menu  -->
@@ -143,19 +134,23 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
-				  </button>
-				  <button onclick = "OnPressButtonLogOut()">Cerrar sesión</button>
-				  <script src="Home.js"></script>		  
+			      </button>
+
+			      <!-- Logo -->
+			   <!--   <a class="navbar-brand" href="Registro.html">Inicia Sesión</a>-->
+
 			    </div>
+
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      	<ul class="nav navbar-nav mu-menu navbar-right">
 			      		<li><a href="#mu-hero">Inicio</a></li>			       
 			            <li><a href="#mu-speakers">Invitados</a></li>
-						<li><a href="#mu-schedule">Programa</a></li>
-
-					</ul>	
-				</div><!-- /.navbar-collapse -->
+			    
+			  
+			           
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container-fluid -->
 		</nav>
 		<!-- End menu -->
@@ -237,7 +232,9 @@
                                             <p align="left">  El Summit contará con expertos que hayan tomado el control de su vida y hayan alcanzado sus metas.</p>
                                             
                                             <br><br>
-                                            <!-- <button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button> -->
+                                            <button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button>
+                                            <br>
+                                            <p align="center"> *Si ya te registraste no es necesario que confirmes tu asistencia</p>
 							</div>
 
 						</div>
@@ -288,7 +285,14 @@
 							<div class="mu-title-area">
 								<h2 class="mu-title">Nuestros Expertos</h2>
 								<p>El evento contará con la presencia de invitados especiales que te ayudarán a tomar el control de tu vida.</p>
+							<br><br>
+							<button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button>
+							 <br>
+                                            <p align="center"> *Si ya te registraste no es necesario que confirmes tu asistencia</p>
+							
 							</div>
+							
+							
 
 							<!-- Start Speakers Content -->
 							<div class="mu-speakers-content">
@@ -349,7 +353,7 @@
 										<img src="Images/LUZ.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
                                            
-                                              <p>Especialista en nutrición Ayurvédica, yoga, meditación y bienestar, madre y emprendedora.
+                                            <p>Especialista en nutrición Ayurvédica, yoga, meditación y bienestar, madre y emprendedora.
 </p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="https://www.facebook.com/luz.orea"><i class="fa fa-facebook"></i></a></li>
@@ -360,32 +364,46 @@
 									</div>
 									<!-- End single speaker -->
 
-									
-								
-
-									<!-- Start single speaker -->
+									<!--
 									<div class="mu-single-speakers">
-										<img src="Images/NISSANW.jpg" alt="speaker img">
+										<img src="Images/COACHING.jpg" alt="speaker img">
 										<div class="mu-single-speakers-info">
-                                            <p>Experiencia Nissan</p>
-                                            
-                                            <ul class="mu-single-speakers-social">
-												<li><a href="https://www.facebook.com/nissanmx?utm_source=BotonFBHomeNissan&utm_medium=Boton&utm_term=Home&utm_campaign=BotonFBHomeNissan"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="https://twitter.com/nissan_mx?utm_source=BotonTWHomeNissan&utm_medium=Boton&utm_term=Home&utm_campaign=BotonTWHomeNissan"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="https://www.instagram.com/nissan_mx/"><i class="fa fa-instagram"></i></a></li>
-												<li><a href="https://www.youtube.com/user/NissanMx1/featured"><i class="fa fa-youtube-play"></i></a></li>
+                                           
+                                            <p>TBC</p>
 											
 										</div>
 									</div>
 									<!-- End single speaker -->
 
+									
+									<!-- End single speaker -->
+									
+									<div class="mu-single-speakers">
+										<img src="Images/NISSANW.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+                                           
+                                            <p>Experiencia Nissan</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="https://www.facebook.com/nissanmx?utm_source=BotonFBHomeNissan&utm_medium=Boton&utm_term=Home&utm_campaign=BotonFBHomeNissan"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="https://twitter.com/nissan_mx?utm_source=BotonTWHomeNissan&utm_medium=Boton&utm_term=Home&utm_campaign=BotonTWHomeNissan"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="https://www.instagram.com/nissan_mx/"><i class="fa fa-instagram"></i></a></li>
+												<li><a href="https://www.youtube.com/user/NissanMx1/featured"><i class="fa fa-youtube-play"></i></a></li>
+											</ul>
+											</ul>
+										</div>
+									</div>
+
 
 								</div>
+								
 							</div>
 							<!-- End Speakers Content -->
 
+                                            
 						</div>
 					</div>
+					
+					 
 				</div>
 			</div>
 		</section>
@@ -395,165 +413,13 @@
 		
 
 		<!-- Start Schedule  -->
-		<section id="mu-schedule">
-			<div class="container">
-				<div class="row">
-					<div class="colo-md-12">
-						<div class="mu-schedule-area">
-
-							<div class="mu-title-area">
-								<h2 class="mu-title">Nuestro Programa</h2>
-								<p>El evento tendrá lugar el día 01 de agosto tomando inicio a las 12:00 hrs y finalizará a las 20:00 hrs.
-</p>
-							</div>
-
-							<div class="mu-schedule-content-area">
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
-								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">01 Agosto</a></li>
-								</ul>
-
-								<!-- Tab panes -->
-								<div class="tab-content mu-schedule-content">
-								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
-                                        <ul>
-                                       		
-                                             <li id="lws1_1">
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">12:30 - 13:30</p>
-                                                    <h3>Workshop "Mindful living" con:</h3>
-                                                    <span>Luz Orea</span><br>
-                                                    <br>
-                                                    <button id="ws1_1">Registrarse</button>
-                                                   
-                                                   
-                                                </div>
-                                            </li>
-                                            
-                                            <li id="lsk1"> 
-                                                <div class="mu-single-event">
-                                              <!-- Tab panes   <img src="assets/images/speaker-1.jpg" alt="event speaker"> -->   
-                                                    <p class="mu-event-time">13:45 - 14:30</p>
-                                                    <h3>Conversaciones con:</h3>
-                                                    <span>Alan Estrada</span><br>
-                                                    <br>
-                                                    <button id="sk1" >Registrarse</button>
-                                            
-                                                  
-                                                </div>
-                                            </li>
-                                            <li id="lws2_1">
-                                                <div class="mu-single-event">
-                                                  <!-- Tab panes  <img src="assets/images/speaker-2.jpg" alt="event speaker"> -->
-                                                    <p class="mu-event-time">13:45 - 14:45</p>
-                                                    <h3>Workshop 2</h3><br>
-
-                                                     <button id="ws2_1">Registrarse</button>
-                                                   
-                                                  
-                                                    
-                                                    
-                                                </div>
-                                            </li>
-                                            
-                                            
-                                            
-
-                                            <li id="lws1_2">
-                                                <div class="mu-single-event">
-                                                   
-                                                    <p class="mu-event-time">16:00 - 17:00</p>
-                                                    <h3>Workshop "Como crear una nueva vida" con:</h3>
-                                                    <span>Luz Orea</span><br>
-                                                  	<br>                                                 
-
-                                                     <button id="ws1_2">Registrarse</button>
-                                                 
-                                                </div>
-                                            </li>
-
-                                           
-                                            <li id="lsk2">
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">17:15 - 18:00</p>
-                                                    <h3>Conversaciones con:</h3>
-                                                    <span>Oscar Madrazo</span><br>
-                                                    <br>
-                                                 
-
-                                                     <button id="sk2">Registrarse</button>
-                                                   
-                                                </div>
-                                            </li>
-                                            
-                                            
-                                            <li id="lsk3">
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">18:20 - 19:10</p>
-                                                    <h3>Conversaciones con:</h3>
-                                                    <span>Marion Reimers</span><br>
-                                                    <h3>TBC<h3>
-													<br>
-                                                 
-
-													<button id="sk3">Registrarse</button>
-                                                </div>
-                                            </li>
-                                            <li id="lws2_2">
-                                                <div class="mu-single-event">
-                                                    <p class="mu-event-time">18:20 - 19:20</p>
-                                                    <h3>Workshop2</h3>
-                                                    <br>
-                                               
-
-                                                    <button id="ws2_2">Registrarse</button>
-                                                    
-                                                    
-                                                </div>
-                                            </li>
-                                            
-                                            
-                                        </ul>
-								    </div>
-
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		<!-- End Schedule -->
 
 		
 
 		<!-- Start Venue -->
-		<section id="mu-venue">
-			<div class="mu-venue-area">
-				<div class="row">
-
-					<div class="col-md-6">
-						<div class="mu-venue-map">
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.420247412168!2d-99.17910158424955!3d19.35094784829899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff818fe9efd3%3A0x6583980ec429ef0d!2sCentro+De+Artes+Vivas!5e0!3m2!1ses-419!2smx!4v1561138766480!5m2!1ses-419!2smx" 
-                                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="mu-venue-address">
-							  <h1>¿DÓNDE?</h1>
-                            <h3>Centro De Artes Vivas</h3>
-                            <h4>Calle Salvador Novo 8, Santa Catarina, 04010 Ciudad de México, CDMX</h4>
-                             <!-- <button class="button button5" onclick="window.location.href='Register.html'">CONFIRMA TU ASISTENCIA </button> -->
-                        </div>
-					</div>
-
-				</div>
-			</div>
-		</section>
+		
 		<!-- End Venue -->
 
     
@@ -562,30 +428,7 @@
 		<!-- End FAQ -->
 
 		<!-- Start Sponsors -->
-		<section id="mu-sponsors">
-			<div class="container">						
-							
-							<!-- Start spnonsors brand logo -->
-							<div class="mu-sponsors-content">
-								<div class="row">
-								
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="Images/nissan_logo.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="Images/logoAltima.png" alt="Brand Logo">
-										</div>
-									</div>				
-
-								</div>
-							</div>
-							<!-- End spnonsors brand logo -->			
-			</div>
-		</section>
+		
 		<!-- End Sponsors -->
 
 
@@ -619,6 +462,8 @@
 
 	</footer>
 	<!-- End footer -->
+
+	
 	
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -631,8 +476,14 @@
     <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="assets/js/app.js"></script>
+  
+       
+	
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
+	
+	
+    
   </body>
 </html>
